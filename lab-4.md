@@ -1,5 +1,15 @@
 # Lab 4: Failure Injection 
 
+## Summary
+This lab walks through using Linkerd to inject failures into an application. 
+
+### What Do You Need? ###
+* A Kubernetes cluster 
+* A machine with the Linkerd CLI installed
+
+
+## Failure Injection 
+
 We already have the books app installed in our cluster and injected with the Linkerd proxy from lab 2. 
 
 1. Check the health of the application:
@@ -153,7 +163,6 @@ We already have the books app installed in our cluster and injected with the Lin
       | kubectl -n booksapp delete -f - \
       && kubectl delete ns booksapp
     ```
-    
 
 
 
