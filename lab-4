@@ -153,3 +153,13 @@ We already have the books app installed in our cluster and injected with the Lin
       | kubectl -n booksapp delete -f - \
       && kubectl delete ns booksapp
     ```
+    
+
+
+
+## Additional Reading 
+
+[Main Linkerd 2 GitHub Repo](https://github.com/linkerd/linkerd2)
+
+[Linkerd Website](https://github.com/linkerd/website)
+
