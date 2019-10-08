@@ -147,6 +147,10 @@ We will be creating a 'quick cluster' using default settings with new network re
 
 ## Additional Reading 
 
-[Main Linkerd 2 GitHub Repo](https://github.com/linkerd/linkerd2)
 
-[Linkerd Website](https://github.com/linkerd/website)
+
+[Oracle Cloud Documentation](https://docs.cloud.oracle.com/iaas/Content/home.htm)
+
+[Oracle Cloud Site](cloud.oracle.com)
+
+[Oracle Kubernetes Engine](https://docs.cloud.oracle.com/iaas/Content/ContEng/Concepts/contengoverview.htm)
