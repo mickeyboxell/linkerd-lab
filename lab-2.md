@@ -60,7 +60,7 @@ The application contains an error that results in the **Add Book** link failing 
 
 2. The **Overview** tab will show all of the services running in the `booksapp` namespace. There will be success rate, requests per second, and latency percentiles. Notice that the success rate for `webapp` is not 100%. This is because the traffic generator is submitting new books. You can do the same thing yourself and push that success rate even lower. Click on `webapp` in the Linkerd dashboard for a live debugging session.
 
-   ![overview](https://github.com/mickeyboxell/linkerd-lab/blob/master/img/overview.png)
+   ![overview](/img/overview.png)
 
 3. On the **Detail** view for the `webapp` service you’ll see that `webapp` is taking traffic from `traffic` (the load generator), and it has two outgoing dependencies: `authors` and `book`. One is the service for pulling in author information and the other is the service for pulling in book information. We can see that while the `authors` service has a 100% success rate the `books` service is less than 100%. A failure in the dependent `books` service may be the cause of the errors that `webapp` is returning. 
 
