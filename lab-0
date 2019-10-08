@@ -12,9 +12,11 @@
 
 1. Within the root compartment of your tenancy, a policy statement (`Allow service OKE to manage all-resources in tenancy`) must be defined to give Container Engine for Kubernetes access to resources in the tenancy. See [Create Required Policy for Container Engine for Kubernetes](https://docs.cloud.oracle.com/iaas/Content/ContEng/Concepts/contengpolicyconfig.htm#PolicyPrerequisitesService). 
 
-2. Using default settings to create a 'quick cluster' with new network resources as required. This approach is the fastest way to create a new cluster. If you accept all the default values, you can create a new cluster in just a few clicks. New network resources for the cluster are created automatically, along with a node pool and worker nodes. Note that worker nodes in a 'quick cluster' are created in private subnets, so a NAT gateway is also created (in addition to an internet gateway). 
+We will be creating a 'quick cluster' using default settings with new network resources as required. This approach is the fastest way to create a new cluster. If you accept all the default values, you can create a new cluster in just a few clicks. New network resources for the cluster are created automatically, along with a node pool and worker nodes. Note that worker nodes in a 'quick cluster' are created in private subnets, so a NAT gateway is also created (in addition to an internet gateway). 
 
-3. In the Console, open the navigation menu. Under **Solutions and Platform**, go to **Developer Services**and click **Container Clusters**.
+2. Make sure you have a 
+
+3. In the Console, open the navigation menu. Under **Solutions and Platform**, go to **Developer Services** and click **Container Clusters**.
 
 4. Choose a **Compartment** you have permission to work in, and in which you want to create both the new cluster and the associated network resources.
 
