@@ -2,9 +2,11 @@
 
 ## Oracle Cloud Account 
 
-1. Click on the following link to create your [Free Account](https://myservices.us.oraclecloud.com/mycloud/signup?language=en&intcmp=NAMK180429P00004:ow:evp:cpo::RC_NAMK180826P00001:OKE_HOL), and complete all the required steps to get your free Oracle Cloud Trial Account. When you complete the registration process you'll receive a credit that will enable you to complete the lab for free. Additionally, you'll have time left over to continue to explore the Oracle Cloud. Soon after requesting your trial you will receive the following email from oraclecloudadmin_ww@oracle.com: 
+1. Click on the following link to create your [Free Account](https://myservices.us.oraclecloud.com/mycloud/signup?language=en&intcmp=NAMK180429P00004:ow:evp:cpo::RC_NAMK180826P00001:OKE_HOL), and complete all the required steps to get your free Oracle Cloud Trial Account. When you complete the registration process you'll receive a credit that will enable you to complete the lab for free. Additionally, you'll have time left over to continue to explore the Oracle Cloud. Soon after requesting your trial you will receive the following email: 
 
 ![img](https://oracle.github.io/learning-library/workshops/container-native-development-with-oke/images/oraclecode/code_9.png)
+
+Refer to https://oracle.github.io/learning-library/data-management-library/autonomous-database/ziplabs/2019/new-account/
 
 
 
