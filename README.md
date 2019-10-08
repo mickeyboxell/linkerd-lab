@@ -15,3 +15,6 @@
 
 * [Linkerd Slides](https://noti.st/mickeyboxell/6Nqtzb/linkerd#s7AELey)
 
+## Attributions
+
+* This content is based on the materials available in the [tasks section of the Linkerd site](https://linkerd.io/2/tasks/). 
