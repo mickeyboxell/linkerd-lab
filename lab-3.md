@@ -1,5 +1,13 @@
 # Lab 3: Canary Deployments
 
+## Summary
+This lab walks through the process of installing and configuring Flagger, a progressive delivery tool. Flagger and Linkerd will be used to perform a canary deployment. 
+
+### What Do You Need? ###
+* A Kubernetes cluster with Linkerd installed
+* A machine with the Linkerd CLI installed
+
+
 ## Install and Configure Flagger
 
 1. Ensure your `kubectl` is version 1.14 or greater or install Kustomize (https://github.com/kubernetes-sigs/kustomize)
