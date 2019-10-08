@@ -1,18 +1,60 @@
 # Lab 0: Oracle Cloud Account and Kubernetes Cluster 
 
 ## Oracle Cloud Account 
+This lab walks you through the steps of getting an Oracle Cloud Free Tier account and signing in.
 
-1. Click on the following link to create your [Free Account](https://myservices.us.oraclecloud.com/mycloud/signup?language=en&intcmp=NAMK180429P00004:ow:evp:cpo::RC_NAMK180826P00001:OKE_HOL), and complete all the required steps to get your free Oracle Cloud Trial Account. When you complete the registration process you'll receive a credit that will enable you to complete the lab for free. Additionally, you'll have time left over to continue to explore the Oracle Cloud. Soon after requesting your trial you will receive the following email: 
+### What Do You Need? ###
+* An email address
+* Ability to receive SMS text verification (only if your email isn't recognized)
 
-![img](https://oracle.github.io/learning-library/workshops/container-native-development-with-oke/images/oraclecode/code_9.png)
 
-Refer to https://oracle.github.io/learning-library/data-management-library/autonomous-database/ziplabs/2019/new-account/
+## Create Your Account ##
+Make sure you registered at the front entrance. The email used during registration will be whitelisted and receive a Oracle Cloud promotion that does not require credit card information. 
 
+1. Enter the appropriate information to create your account. 
+     * Enter the same **email address** you used to register for Oracle Open World / Oracle Code One. A popup should appear recognizing your email. If not, the registration form will ask for additional information later.
+     * Select your **country/territory**.
+     * Click **Next**. 
+2. Enter a few details for a new personal account. 
+     * You can choose almost anything for your Cloud Account Name. Remember what you wrote. You'll need this name later to sign in.
+     * Click **Enter Password**.  
+3. If your email wasn't recognized or you're using a different email address, you'll need to provide additional information.
+     * Provide a mobile number and click **Next: Verify Mobile Number**. In a few seconds, you should receive a verification code through SMS-text. Enter this code in the appropriate field and click **Verify**.
+     * Click **Add Credit Card Details**. You will NOT be charged unless you elect to upgrade the account later. Enter the billing information, card details, and click **Finish**.
+4. Validate your address.
+5. Enter a password. Remeber this password so you can sign in to the Cloud later.
+6. Click **Review Terms and Conditions**. Read and agree to the Terms & Conditions by checking the box and click **Complete Sign-Up**.
+7. Your account is partitioning and should be available in a few seconds! When it's ready, you're automatically taken to a sign in page. You'll also receive a confirmation email containing sign in information.
+8. Sign in to your Oracle Cloud account to start the lab. Your **user name** is your email address.
+
+    ![](https://github.com/oracle/learning-library/blob/master/data-management-library/autonomous-database/ziplabs/2019/new-account/img/FirstSignIn.png)
+
+## Sign in to Your Account ##
+If you've signed out of the Oracle Cloud, use these steps to sign back in.
+
+1. Go to [cloud.oracle.com](https://cloud.oracle.com).
+2. Click the **Profile Icon** to bring up a menu.
+3. Click **Sign in to Cloud**.
+
+    ![](https://github.com/oracle/learning-library/blob/master/data-management-library/autonomous-database/ziplabs/2019/new-account/img/RedwoodSignin.png)
+
+
+4. Enter your Cloud Account Name and click **Next**. This is the name you chose while creating your account in the previous section. It's not your email address. If you've forgotten the name, see the confirmation email.
+
+    ![](https://github.com/oracle/learning-library/blob/master/data-management-library/autonomous-database/ziplabs/2019/new-account/img/accountname.png)
+
+    [Description of the illustration accountname.png](files/accountname.txt)
+
+5. Enter your Cloud Account credentials and click **Sign In**. Your username is your email address. The password is what you chose when you signed up for an account.
+
+    ![](https://github.com/oracle/learning-library/blob/master/data-management-library/autonomous-database/ziplabs/2019/new-account/img/username.png)
+    
+    [Description of the illustration username.png](files/username.txt)
 
 
 ## Kubernetes Cluster Creation 
 
-1. Within the root compartment of your tenancy, a policy statement (`Allow service OKE to manage all-resources in tenancy`) must be defined to give Container Engine for Kubernetes access to resources in the tenancy. See [Create Required Policy for Container Engine for Kubernetes](https://docs.cloud.oracle.com/iaas/Content/ContEng/Concepts/contengpolicyconfig.htm#PolicyPrerequisitesService). 
+1. Within the root compartment of your tenancy write the following policy statement to give Container Engine for Kubernetes access to resources in the tenancy: `Allow service OKE to manage all-resources in tenancy` See [Create Required Policy for Container Engine for Kubernetes](https://docs.cloud.oracle.com/iaas/Content/ContEng/Concepts/contengpolicyconfig.htm#PolicyPrerequisitesService). 
 
 We will be creating a 'quick cluster' using default settings with new network resources as required. This approach is the fastest way to create a new cluster. If you accept all the default values, you can create a new cluster in just a few clicks. New network resources for the cluster are created automatically, along with a node pool and worker nodes. Note that worker nodes in a 'quick cluster' are created in private subnets, so a NAT gateway is also created (in addition to an internet gateway). 
 
