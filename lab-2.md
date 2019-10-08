@@ -226,11 +226,13 @@ Rather than updating the code, we can use Linkerd to retry requests to the faili
 
 Linkerd can be used to limit how long to wait before failing outgoing requests to another service. These timeouts work by adding additional annotations to a service profile’s routes configuration.
 
+
 1. Look at the current latency for requests from `webapp` to the `books`service:
 
    ```bash
    linkerd -n booksapp routes deploy/webapp --to svc/books
    ```
+
 
 2. Requests to the `books` service’s `PUT /books/{id}.json` route include retries for when that service calls the `authors` service as part of serving those requests, as described in the previous section. This improves success rate, at the cost of additional latency. For the purposes of this demo, let’s set a 25ms timeout for calls to that route. To edit the `books` service profile, run:
 
@@ -251,6 +253,7 @@ Linkerd can be used to limit how long to wait before failing outgoing requests t
    ```
 
    Linkerd will now return errors to the `webapp` REST client when the timeout is reached. This timeout includes retried requests and is the maximum amount of time a REST client would wait for a response.
+
 
 3. Run `routes` to see what has changed: 
 
