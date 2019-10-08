@@ -1,5 +1,13 @@
 # Lab 5: Debugging Your Service
 
+## Summary
+This lab walks through using Linkerd and the Linkerd debug container to debug a sample application. 
+
+### What Do You Need? ###
+* A Kubernetes cluster 
+* A machine onto which you can install the Linkerd CLI
+
+
 ## Install the Sample Application 
 
 To get a feel for how Linkerd would work for one of your services, you can install a demo application. The emojivoto application is a standalone Kubernetes application that uses a mix of gRPC and HTTP calls to allow the users to vote on their favorite emojis.
