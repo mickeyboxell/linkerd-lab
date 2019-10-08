@@ -233,3 +233,14 @@ The canary analysis can be extended with Prometheus queries.
    ```
    kubectl -n linkerd logs deployment/flagger -f | jq .msg
    ```
+   
+
+
+
+## Additional Reading 
+
+[Main Linkerd 2 GitHub Repo](https://github.com/linkerd/linkerd2)
+
+[Linkerd Website](https://github.com/linkerd/website)
+
+[Flagger](<https://docs.flagger.app/>)
