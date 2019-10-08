@@ -81,3 +81,10 @@ The debug sidecar image contains [`tshark`](https://www.wireshark.org/docs/man-p
    ```
 
    Of course, this only works if you have the ability to `exec` into arbitrary containers in the Kubernetes cluster. [`linkerd tap`](https://linkerd.io/2/reference/cli/tap/) provides an alternative to this approach.
+
+
+## Additional Reading 
+
+[Main Linkerd 2 GitHub Repo](https://github.com/linkerd/linkerd2)
+
+[Linkerd Website](https://github.com/linkerd/website)
