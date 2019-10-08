@@ -1,5 +1,14 @@
 # Lab 2: Demo Application 
 
+
+## Summary
+This lab walks through the process of deploying a sample application and adding the Linkerd side car proxy. After Linkerd has been added to the application you will learn how to use it to debug an error in the application. Next, you will learn how to use service profiles to gain valuable information about traffic routing. Finally, you will use Linkerd to configure retries and timeouts for the application. 
+
+### What Do You Need? ###
+* A Kubernetes cluster 
+* A machine with the Linkerd CLI installed
+
+
 ## Install the Demo Application 
 
 1. Install the books app to your cluster with:
