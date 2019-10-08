@@ -28,7 +28,7 @@
 
     Navigate to http://localhost:7000/
 
-![bookinfo](https://github.com/mickeyboxell/linkerd-lab/blob/master/img/bookinfo.png)
+![bookinfo](/img/bookinfo.png)
 
 
 
@@ -64,19 +64,19 @@ The application contains an error that results in the **Add Book** link failing 
 
 3. On the **Detail** view for the `webapp` service you’ll see that `webapp` is taking traffic from `traffic` (the load generator), and it has two outgoing dependencies: `authors` and `book`. One is the service for pulling in author information and the other is the service for pulling in book information. We can see that while the `authors` service has a 100% success rate the `books` service is less than 100%. A failure in the dependent `books` service may be the cause of the errors that `webapp` is returning. 
 
-   ![detail](https://github.com/mickeyboxell/linkerd-lab/blob/master/img/detail.png)
+   ![detail](/img/detail.png)
 
 4. Scroll down the page to see the live list of all traffic endpoints that `webapp` is receiving. The information on this page is populated based on the `linkerd top` command, which is used to display sorted information about live traffic. 
 
-   ![top](https://github.com/mickeyboxell/linkerd-lab/blob/master/img/top.png)
+   ![top](/img/top.png)
 
 5. Inbound traffic coming from the `webapp` service going to the `books` service is failing a significant percentage of the time. This may explain why `webapp` is throwing intermittent failures. The information on this page is populated based on the `linkerd tap` command, which is used to listen to a traffic stream. Click on the 🔬 icon to look at the request and response stream.
 
-   ![tap](https://github.com/mickeyboxell/linkerd-lab/blob/master/img/tap.png)
+   ![tap](/img/tap.png)
 
 6. Many of these requests are returning HTTP 500 errors. Click on the **∨** in the left most column of any request to see additional details.
 
-   ![tap_detail](https://github.com/mickeyboxell/linkerd-lab/blob/master/img/tap_detail.png)
+   ![tap_detail](/img/tap_detail.png)
 
    This shows how to diagnose an intermittent issue that affecting a single route. You now have everything you need to open a bug report explaining exactly what the root cause is. If the `books` service was your own, you know exactly where to look in the code. 
 
