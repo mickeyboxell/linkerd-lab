@@ -38,11 +38,11 @@ If you've signed out of the Oracle Cloud, use these steps to sign back in.
 
 ![redwood sign in](/img/RedwoodSignin.png)
 
-4. Enter your Cloud Account Name and click **Next**. This is the name you chose while creating your account in the previous section. It's not your email address. If you've forgotten the name, see the confirmation email.
+Enter your Cloud Account Name and click **Next**. This is the name you chose while creating your account in the previous section. It's not your email address. If you've forgotten the name, see the confirmation email.
 
 ![account name](/img/accountname.png)
 
-5. Enter your Cloud Account credentials and click **Sign In**. Your username is your email address. The password is what you chose when you signed up for an account.
+Enter your Cloud Account credentials and click **Sign In**. Your username is your email address. The password is what you chose when you signed up for an account.
 
 ![username](/img/username.png)
 
