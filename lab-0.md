@@ -1,6 +1,6 @@
 # Lab 0: Oracle Cloud Account and Kubernetes Cluster 
 
-## Oracle Cloud Account 
+## Summary
 This lab walks you through the steps of getting an Oracle Cloud Free Tier account and signing in. Next, you will use the account to create a Kubernetes cluster onto which we will install Linkerd. 
 
 ### What Do You Need? ###
