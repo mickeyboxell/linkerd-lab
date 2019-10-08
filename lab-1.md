@@ -63,6 +63,9 @@
    ```
    linkerd dashboard
    ```
+You will see a dashboard containing all of the applications running in the data plane. 
+
+![overview](/img/overview.png)
    
 ## Additional Reading 
 
