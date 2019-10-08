@@ -1,16 +1,17 @@
-# Lab 4: Failure Injection 
+# Lab 4: Failure Injection
 
 ## Summary
-This lab walks through using Linkerd to inject failures into an application. 
 
-### What Do You Need? ###
+This lab walks through using Linkerd to inject failures into an application.
+
+### What Do You Need?
+
 * A Kubernetes cluster 
 * A machine with the Linkerd CLI installed
 
+## Failure Injection
 
-## Failure Injection 
-
-We already have the books app installed in our cluster and injected with the Linkerd proxy from lab 2. 
+We already have the books app installed in our cluster and injected with the Linkerd proxy from lab 2.
 
 1. Check the health of the application:
 
@@ -27,17 +28,17 @@ We already have the books app installed in our cluster and injected with the Lin
    #          value: "0.5"
    ```
 
-3. Check the health of the application again: 
+3. Check the health of the application again:
 
-   ```
+   ```text
    linkerd stat deploy
    ```
 
-   We should now see the application is healthy and has a 100% success rate. 
+   We should now see the application is healthy and has a 100% success rate.
 
 4. Now we can create our error service. Here I will use NGINX configured to respond only with HTTP status code 500. Create a file called `error-injector.yaml`
 
-   ```
+   ```text
    apiVersion: apps/v1
    kind: Deployment
    metadata:
@@ -90,11 +91,11 @@ We already have the books app installed in our cluster and injected with the Lin
    apiVersion: v1
    data:
     nginx.conf: |2
-   
+
        events {
            worker_connections  1024;
        }
-   
+
        http {
            server {
                location / {
@@ -109,13 +110,13 @@ We already have the books app installed in our cluster and injected with the Lin
 
 5. Deploy the manifest:
 
-   ```
+   ```text
    kubectl apply -f error-injector.yaml
    ```
 
 6. Now we can create a traffic split resource which will direct 10% of the books service to the error service. Create a file called `error-split.yaml`:
 
-   ```
+   ```text
    apiVersion: split.smi-spec.io/v1alpha1
    kind: TrafficSplit
    metadata:
@@ -131,13 +132,13 @@ We already have the books app installed in our cluster and injected with the Lin
 
 7. Deploy the manifest:
 
-   ```
+   ```text
    kubectl apply -f error-split.yaml
    ```
 
 8. View the error rate:
 
-   ```
+   ```text
    linkerd routes deploy/webapp --to service/books
    ```
 
@@ -152,21 +153,19 @@ We already have the books app installed in our cluster and injected with the Lin
 
 10. Restore the health of the application by deleting the traffic split resource:
 
-    ```
+    ```text
     kubectl delete trafficsplit/error-split
     ```
 
 11. To remove the books app and the `booksapp` namespace from your cluster, run:
 
-    ```
+    ```text
     curl -sL https://run.linkerd.io/booksapp.yml \
       | kubectl -n booksapp delete -f - \
       && kubectl delete ns booksapp
     ```
 
-
-
-## Additional Reading 
+## Additional Reading
 
 [Main Linkerd 2 GitHub Repo](https://github.com/linkerd/linkerd2)
 

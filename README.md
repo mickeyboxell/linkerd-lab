@@ -1,4 +1,4 @@
-# Service Mesh: Beyond the Hype with Linkerd
+# Overview
 
 ![Linkerd](https://user-images.githubusercontent.com/9226/33582867-3e646e02-d90c-11e7-85a2-2e238737e859.png)
 
