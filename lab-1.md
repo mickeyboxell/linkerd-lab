@@ -1,7 +1,8 @@
 
 # Lab 1: Install Linkerd
 
-
+## Summary
+This lab walks through the process of installing the Linkerd CLI onto a host machine and installing the Linkerd control plane onto a Kubernetes cluster. 
 
 1. Download the Linkerd CLI:
 
