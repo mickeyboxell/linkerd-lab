@@ -22,8 +22,8 @@
 
 6. Either just accept the default configuration details for the new cluster, or specify alternatives as follows: 
 
-   - **Name:** The name of the new cluster. Either accept the default name or enter a name of your choice. Avoid entering confidential information.**Kubernetes**
-   - **Version:** The version of Kubernetes to run on the master nodes and worker nodes of the cluster. Either accept the default version or select a version of your choice. Amongst other things, the Kubernetes version you select determines the default set of admission controllers that are turned on in the created cluster (the set follows the recommendation given in the [Kubernetes documentation](https://kubernetes.io/docs/admin/admission-controllers/#is-there-a-recommended-set-of-admission-controllers-to-use) for that version).
+   - **Name:** The name of the new cluster. Either accept the default name or enter a name of your choice. Avoid entering confidential information.
+   - **Kubernetes Version:** The version of Kubernetes to run on the master nodes and worker nodes of the cluster. Either accept the default version or select a version of your choice. Amongst other things, the Kubernetes version you select determines the default set of admission controllers that are turned on in the created cluster (the set follows the recommendation given in the [Kubernetes documentation](https://kubernetes.io/docs/admin/admission-controllers/#is-there-a-recommended-set-of-admission-controllers-to-use) for that version).
 
 7. Select **Quick Create** to create a new cluster with default settings, along with new network resources for the new cluster. The **Create Virtual Cloud Network** panel shows the network resources that will be created for you by default. The **Create Node Pool** panel shows the fixed properties of the first node pool in the cluster that will be created for you: 
 
