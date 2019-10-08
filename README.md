@@ -7,14 +7,9 @@
 
 ## Table of Contents
 
-- Lab 0: Oracle Cloud Account and Kubernetes Cluster
-- Lab 1: Install Linkerd
-- Lab 2: Demo Application
-- Lab 3: Canary Deployments
-- Lab 4: Failure Injection
-- Lab 5: Debugging Your Service
-
-
-
-
-
+* [Lab 0: Oracle Cloud Account and Kubernetes Cluster](lab-0)
+* [Lab 1: Install Linkerd](lab-1)
+* [Lab 2: Demo Application](lab-2)
+* [Lab 3: Canary Deployments](lab-3)
+* [Lab 4: Failure Injection](lab-4)
+* [Lab 5: Debugging Your Service](lab-5)
