@@ -27,7 +27,7 @@ Make sure you registered at the front entrance. The email used during registrati
 7. Your account is partitioning and should be available in a few seconds! When it's ready, you're automatically taken to a sign in page. You'll also receive a confirmation email containing sign in information.
 8. Sign in to your Oracle Cloud account to start the lab. Your **user name** is your email address.
 
-    ![](https://github.com/oracle/learning-library/blob/master/data-management-library/autonomous-database/ziplabs/2019/new-account/img/FirstSignIn.png)
+    ![first sign in](https://github.com/oracle/learning-library/blob/master/data-management-library/autonomous-database/ziplabs/2019/new-account/img/FirstSignIn.png)
 
 ## Sign in to Your Account ##
 If you've signed out of the Oracle Cloud, use these steps to sign back in.
@@ -36,20 +36,15 @@ If you've signed out of the Oracle Cloud, use these steps to sign back in.
 2. Click the **Profile Icon** to bring up a menu.
 3. Click **Sign in to Cloud**.
 
-    ![](https://github.com/oracle/learning-library/blob/master/data-management-library/autonomous-database/ziplabs/2019/new-account/img/RedwoodSignin.png)
-
+    ![redwood sign in](https://github.com/oracle/learning-library/blob/master/data-management-library/autonomous-database/ziplabs/2019/new-account/img/RedwoodSignin.png)
 
 4. Enter your Cloud Account Name and click **Next**. This is the name you chose while creating your account in the previous section. It's not your email address. If you've forgotten the name, see the confirmation email.
 
-    ![](https://github.com/oracle/learning-library/blob/master/data-management-library/autonomous-database/ziplabs/2019/new-account/img/accountname.png)
-
-    [Description of the illustration accountname.png](files/accountname.txt)
+    ![account name](https://github.com/oracle/learning-library/blob/master/data-management-library/autonomous-database/ziplabs/2019/new-account/img/accountname.png)
 
 5. Enter your Cloud Account credentials and click **Sign In**. Your username is your email address. The password is what you chose when you signed up for an account.
 
-    ![](https://github.com/oracle/learning-library/blob/master/data-management-library/autonomous-database/ziplabs/2019/new-account/img/username.png)
-    
-    [Description of the illustration username.png](files/username.txt)
+    ![username](https://github.com/oracle/learning-library/blob/master/data-management-library/autonomous-database/ziplabs/2019/new-account/img/username.png)
 
 
 ## Kubernetes Cluster Creation 
