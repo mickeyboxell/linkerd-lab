@@ -259,3 +259,10 @@ Linkerd can be used to limit how long to wait before failing outgoing requests t
    ```
 
    We can see that the timeouts are working by observing that the effective success rate for our route has dropped below 100%.
+
+
+## Additional Reading 
+
+[Main Linkerd 2 GitHub Repo](https://github.com/linkerd/linkerd2)
+
+[Linkerd Website](https://github.com/linkerd/website)
