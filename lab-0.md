@@ -97,7 +97,7 @@ If you've signed out of the Oracle Cloud, use these steps to sign back in.
     oci setup config
     ```
 
-    The command prompts you for the information required for the config file and the API public/private keys. The setup dialog generates an API key pair and creates the config file. For more information refer to [Installing the CLI](https://docs.cloud.oracle.com/iaas/Content/API/SDKDocs/cliinstall.htm>).
+    The command prompts you for the information required for the config file and the API public/private keys. The setup dialog generates an API key pair and creates the config file. Upload the public API key to your Oracle Cloud account in the users menu. For more information refer to [Installing the CLI](https://docs.cloud.oracle.com/iaas/Content/API/SDKDocs/cliinstall.htm>).
 
 13. Download kubeconfig. In the Console, open the navigation menu. Under Solutions and Platform, go to Developer Services and click Container Clusters. On the Cluster List page, click the name of the cluster you want to access using kubectl and the Kubernetes Dashboard. The Cluster page shows details of the cluster. Click the Access Kubeconfig button to display the How to Access Kubeconfig dialog box.Create a directory to contain the kubeconfig file. By default, the expected directory name is `$HOME/.kube`. For example, on Linux, enter the following command \(or copy and paste it from the **How to Access Kubeconfig** dialog box\):
 
@@ -110,7 +110,7 @@ If you've signed out of the Oracle Cloud, use these steps to sign back in.
     ```text
     oci ce cluster create-kubeconfig --cluster-id ocid1.cluster.oc1.phx.aaaaaaaaae... --file $HOME/.kube/config  --region us-phoenix-1
     ```
-
+    Note: if the CLI command looks different in the UI, copy that command instead. 
     Note that if a kubeconfig file already exists in the location you specify, details about the cluster will be added as a new context to the existing kubeconfig file. The `current-context:` element in the kubeconfig file will be set to point to the newly added context.
 
 15. Set the value of the KUBECONFIG environment variable to point to the name and location of the kubeconfig file. For example, on Linux, enter the following command \(or copy and paste it from the **How to Access Kubeconfig** dialog box\):
